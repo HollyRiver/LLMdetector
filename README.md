@@ -20,7 +20,7 @@
 >
 > 5개 주제 카테고리(가상 시나리오, 개인 경험, 철학, 자기계발, 대인관계)로 구성
 
-## 방법
+## 방법론
 
 1. **문체(stylometric) 피처** — 어휘 밀도, 고유 단어 수, 가독성 지수(Flesch-Kincaid, Gunning Fog, SMOG) 등
 2. **Perplexity 피처** — Llama-3.1-8B로 계산 (장문은 stride 512 슬라이딩 윈도우)
