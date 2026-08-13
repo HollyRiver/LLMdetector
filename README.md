@@ -3,6 +3,7 @@
 &nbsp;인간이 작성한 텍스트와 LLM(GPT·Gemini·Claude·DeepSeek)이 생성한 텍스트를 해석 가능한 통계적 피처로 판별하는 연구의 코드베이스
 
 > **Publication (공동 1저자)**
+> 
 > Hyungbin Park†, **Shinsung Kang†**, Kihoon Lee, Gwangsu Kim. (2026).
 > Study on comparative and discriminatory methodology of human and machine-generated languages.
 > *Korean Journal of Applied Statistics*, **39**(3), 235–255. [DOI](https://doi.org/10.5351/KJAS.2026.39.3.235)
