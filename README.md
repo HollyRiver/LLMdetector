@@ -7,7 +7,7 @@
 > Study on comparative and discriminatory methodology of human and machine-generated languages.
 > *Korean Journal of Applied Statistics*, **39**(3), 235–255. [DOI](https://doi.org/10.5351/KJAS.2026.39.3.235)
 
-## 개요
+## 수행 작업 및 퍼포먼스
 
 * Binary Classification: human vs LLM 판별 — Acc 0.9778, F1-Score 0.9864
 * Multi-Classification (5-way): human/GPT/Gemini/Claude/DeepSeek 생성 주체 식별 — Acc 0.8598, F1-Score 0.8607
@@ -16,16 +16,15 @@
 ## 데이터
 
 * Quora 질문에 대한 인간 답변과 4개 LLM의 답변 총 14,833건.
-> LLM 생성 텍스트에 의한 오염을 배제하기 위해 연구 시점 기준 3년 이전에 게시된 질문만 사용
->
-> 5개 주제 카테고리(가상 시나리오, 개인 경험, 철학, 자기계발, 대인관계)로 구성
+  * LLM 생성 텍스트에 의한 오염을 배제하기 위해 연구 시점 기준 3년 이전에 게시된 질문만 사용
+  * 5개 주제 카테고리(가상 시나리오, 개인 경험, 철학, 자기계발, 대인관계)로 구성
 
 ## 방법론
 
 * Feature Extraction
-  1. 문체(stylometric) 피처 — 어휘 밀도, 고유 단어 수, 가독성 지수(Flesch-Kincaid, Gunning Fog, SMOG) 등
-  2. Perplexity — Llama-3.1-8B로 계산 (장문은 stride 512 슬라이딩 윈도우)
-  3. LDA 토픽 피처 — coherence + KneeLocator로 토픽 수 자동 선택 후 서브토픽 확률 분포 사용
+  * Stylometric Features — 어휘 밀도, 고유 단어 수, 가독성 지수(Flesch-Kincaid, Gunning Fog, SMOG) 등
+  * Perplexity — Llama-3.1-8B로 계산 (장문은 stride 512 슬라이딩 윈도우)
+  * LDA Topics — coherence + KneeLocator로 토픽 수 자동 선택 후 서브토픽 확률 분포 사용
 * Classifer: DNN (256→128→64→32, BatchNorm/Dropout, AdamW)
 
 ## 리포 구조
