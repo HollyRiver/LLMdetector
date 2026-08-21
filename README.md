@@ -28,7 +28,7 @@
   * LDA Topics — coherence + KneeLocator로 토픽 수 자동 선택 후 서브토픽 확률 분포 사용
 * Classifer: DNN (256→128→64→32, BatchNorm/Dropout, AdamW)
 
-## 리포 구조
+## 리포지토리 구조
 
 ```
 ├── 원본 파일.ipynb / 정리.ipynb / textstat.ipynb   # 데이터 구축·문체 피처·EDA
