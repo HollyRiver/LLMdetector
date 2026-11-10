@@ -12,7 +12,7 @@
 
 * Binary Classification: human vs LLM 판별 — Acc 0.9778, F1-Score 0.9864
 * Multi-Classification (5-way): human/GPT/Gemini/Claude/DeepSeek 생성 주체 식별 — Acc 0.8598, F1-Score 0.8607
-* Ablation으로 perplexity 피쳐의 기여를 정량화 (제외 시 이진 −1.8%p, 다중 −4.4%p)
+* Ablation으로 perplexity 피쳐의 기여를 정량화 (제외 시 정확도 이진 −1.8%p, 다중 −3.8%p)
 
 ## 데이터
 
